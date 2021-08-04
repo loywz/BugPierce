@@ -1,0 +1,506 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-image: linear-gradient(to right top, #101212, #111313, #111314, #121414, #131415, #141416, #141516, #151517, #151618, #161718, #171819, #181919);
+    font-size: 12px;
+  }
+  
+  body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
+  .background {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100vw;
+    margin: auto;
+    padding: 10px;
+
+  }
+
+  
+  @keyframes voltar {
+    from {
+      right: 1300px;
+    }
+    to{
+        right: 0;
+    }
+  }
+
+  @keyframes voltar-e {
+    from {
+      left: 2300px;
+    }
+    to{
+        left: 0;
+    }
+  }
+  
+  
+  .screen {
+
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    right: 1300px;
+    animation: voltar 1s;
+    -webkit-animation-fill-mode: forwards; 
+  }
+
+  @media (max-width: 809px) {
+    .screen{
+      height: 500px;
+    }
+    div.perfil-canto{
+      height: 443px;
+
+    }
+  }
+
+  
+
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #ed1c6f;
+    animation: brilha-close 2s infinite;
+    animation-delay: 5s;
+  }
+  
+  .screen-header-button.maximize {
+    background: #e8e925;
+    animation: brilha-max 2s;
+    animation-delay: 10s;
+
+  }
+  
+  .screen-header-button.minimize {
+    background: #74c54f;
+    animation: brilha-min 2s infinite;
+    animation-delay: 15s;
+  }
+  
+
+ .screen-header-button.close:hover{
+  border-color: #ff0000;
+  box-shadow: 0 0 20px 14px #ff0116;
+ }
+
+ .screen-header-button.maximize:hover{
+  border-color: #9dff00;
+  box-shadow: 0 0 20px 10px #91ff00;
+ }
+
+ .screen-header-button.minimize:hover{
+  border-color: #00ff2a;
+  box-shadow: 0 0 20px 10px #00ff2a;
+ }
+
+ @keyframes brilha-min{
+   50%{
+    border-color: #00ff2a;
+    box-shadow: 0 0 20px 3px #00ff2a;
+   }
+ }
+
+ @keyframes brilha-max{
+  50%{
+    border-color: #9dff00;
+    box-shadow: 0 0 20px 4  px #91ff00;
+  }
+}
+
+@keyframes brilha-close{
+  50%{
+   border-color: #ff0000;
+   box-shadow: 0 0 20px 3px #ff0000;
+  }
+}
+
+.cont-mae{
+    display: flex;
+}
+
+.perfil-canto{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 340px;
+    height: 343px;
+    border-radius: 5px;
+    background-color: #262626;
+}
+
+.card img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.card{
+    margin: 0 auto;
+}
+.nome{
+    margin: 0 auto;
+    margin-top: 30px;
+    color: rgb(240, 236, 230);
+}
+.profissao{
+    margin: 0 auto;
+    margin-top: 20px;
+    color: rgb(240, 236, 230);
+}
+  
+.info-baixo{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+
+
+}
+
+.info{
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+
+  height: 344px;
+  padding: 20px;
+}
+
+.info-top span{
+  display: block;
+  border-bottom: 1px solid white;
+  padding-bottom:10px;
+  font-size: 17px;
+  max-width: 500px;
+
+
+}
+.info-top{
+  color: rgb(240, 236, 230);
+  font-size: 15px;
+  margin: 0 auto;
+  max-height: 50px;
+  width: 89%;
+  margin-left: 0px;
+
+}
+
+.email{
+  color: rgb(240, 236, 230);
+  display: inline-block;
+  font-size: 17px;
+  margin-top: 30px;
+
+  margin-bottom: 5px;
+}
+
+.email-b{
+  color: rgb(201, 198, 193);
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.email-cont{
+  
+}
+
+.email-cont1{
+  width: 150px;
+  margin-right: 150px;
+}
+
+.info-baixo1{
+  display: flex;
+  flex-direction: column;
+
+}
+
+@media (max-width: 850px) {
+  .email-cont1{
+    margin-right: 160px;
+  }
+}
+
+
+
+  
+ 
+
+  @keyframes focus {
+    5% {
+      width: 5%;
+    }
+     10% {
+      width: 10%;
+    }
+
+    15% {
+        width: 15%;
+      }
+      20% {
+        width: 20%;
+      }
+       25% {
+        width: 25%;
+      }
+  
+      30% {
+          width: 30%;
+        }
+   35% {
+      width: 35%;
+    }
+     40% {
+      width: 40%;
+    }
+
+    45% {
+        width: 45%;
+      }
+      50% {
+        width: 50%;
+      }
+       55% {
+        width: 55%;
+      }
+  
+      60% {
+          width: 60%;
+        }
+    65% {
+        width: 65%;
+        }
+
+        70% {
+        width: 70%;
+        }
+
+        75% {
+            width: 75%;
+          }
+
+          80% {
+            width: 80%;
+          }
+          85% {
+            width: 85%;
+          }
+
+          90% {
+            width: 90%;
+          }
+          95% {
+            width: 95%;
+          }
+
+          100% {
+            width: 100%;
+            border-bottom-color: #c0c0c0;
+          }
+
+
+
+    
+  }
+  
+ 
+
+
+
+    .credits {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        color: #ffffff;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+
+
+.voltar{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    position: relative;
+    animation: voltar 1.2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.imgerror{
+    width: 34px;
+    height: 34px;
+    position: relative;
+    animation: rgb 5s infinite; 
+
+}
+
+.editar{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(266deg) brightness(108%) contrast(101%);
+  animation: rgb 5s infinite;
+}
+
+@keyframes rgb{
+  10%{
+    filter: invert(42%) sepia(25%) saturate(4775%) hue-rotate(228deg) brightness(83%) contrast(92%);
+  }
+  
+  20%{
+    filter: invert(65%) sepia(46%) saturate(5638%) hue-rotate(161deg) brightness(105%) contrast(102%);
+  }
+
+  30%{
+    filter: invert(78%) sepia(92%) saturate(2772%) hue-rotate(84deg) brightness(99%) contrast(103%);
+  }
+
+  40%{
+    filter: invert(72%) sepia(65%) saturate(641%) hue-rotate(38deg) brightness(104%) contrast(108%);
+  }
+
+  50%{
+    filter: invert(26%) sepia(84%) saturate(6212%) hue-rotate(296deg) brightness(116%) contrast(127%);  
+  }
+
+  60%{
+    filter: invert(21%) sepia(45%) saturate(4310%) hue-rotate(302deg) brightness(94%) contrast(108%);
+  }
+
+  70%{
+    filter: invert(19%) sepia(62%) saturate(4606%) hue-rotate(337deg) brightness(86%) contrast(102%);
+  }
+
+  90%{
+    filter: invert(28%) sepia(82%) saturate(6036%) hue-rotate(352deg) brightness(90%) contrast(127%);
+  }
+
+  100%{
+    filter: invert(96%) sepia(30%) saturate(2607%) hue-rotate(355deg) brightness(100%) contrast(107%);
+  }
+}
+
+::placeholder{
+  color: white;
+
+  
+}
+
+input{
+  background-color: rgba(131, 126, 126, 0.219);
+  border-color: #797575;
+  outline: none;
+}
+button{
+ background-color: #10121200;
+}
+
+.atualiazar{
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: 195px;
+  text-decoration: none;
+  bottom: -35px;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid white;
+  
+}
+.atualiazar:hover{
+  background: #2e2e2e;
+}
+
+.sair{
+  position: relative;
+  display: inline-block;
+  padding: 5px 16px 5px;
+  border: 1px solid rgb(139, 19, 19);
+  background-color: rgb(122 52 59);
+  text-decoration: none;
+  color: rgb(231, 210, 210);
+  font-size: 14px;
+  top: 25px;
+}
+
+
+.sair:hover{
+  background: #750404;
+}
+

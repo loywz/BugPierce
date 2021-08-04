@@ -1,0 +1,62 @@
+.sec-mae{
+    background-image: linear-gradient(to right top, #000000, #070707, #0d0d0d, #121212, #161616);
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+.img-pro-img{
+    width: 600px;
+    height: 600px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.text-pro{
+    color: antiquewhite;
+    font-size: 20px;
+    margin-bottom: 130px;
+    line-height: 1.6;
+    
+}
+
+.text-pro h2{
+    margin-bottom: 20px;
+}
+
+
+.venha-pro{
+    color: aliceblue;
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;    
+    border-radius: 40px;
+    border: 1px solid;
+    margin-left: 5px;
+    transition-duration: 1s;
+}
+
+.venha-pro:hover{
+    background-color: rgb(221, 211, 211);
+    transition-duration: 1s;
+    color: #000000;
+
+}
+
+@media (max-width: 1225px){
+    .text-pro{
+        margin: 10px auto;
+        font-size: calc(1em + 0.50vw);
+    }
+    .img-pro{
+        margin: 10px auto;
+    }
+}

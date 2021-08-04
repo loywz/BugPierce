@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+	padding: 0px;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+}
+
+
+.container123{
+    width: 100vw;
+    padding: 20px 60px;
+    display: flex;
+    background-color: #111010;
+    color: #fff;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.container123 a{
+    color: #fff;
+}
+
+.link-programas:hover{
+    color: rgb(177, 161, 161);
+}
+
+.link-pentesters:hover{
+    color: rgb(177, 161, 161);
+}
+
+.programas-programas{
+    margin-right: 100px;
+    
+}
+
+@media (max-width: 400px){
+    .pentesters-pentesters{
+        margin-top: 20px;
+    }   
+}
+
+.link-programas{
+    border-bottom: 2px solid rgb(177, 174, 10);
+    padding-bottom: 4px;
+}
+
+.container-programas{
+    width: 100vw;
+    padding: 20px 60px;
+    background-color: #131313;
+    color: #fff;
+}
+
+.container-programas p{
+    font-size: 18px;
+}
+
+.seguraa{
+    width: 100vw;
+    padding: 20px 60px;
+    background-image: linear-gradient(to right top, #0f1011, #171818, #1e1e1f, #252525, #2c2c2c);
+}
+
+.programa-na-lista{
+    color: white;
+}
