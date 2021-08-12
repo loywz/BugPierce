@@ -64,3 +64,10 @@
 .programa-na-lista{
     color: white;
 }
+
+.adicionar-programa{
+    margin-left: 100px;
+}
+.adicionar-programa:hover{
+    color: rgb(177, 161, 161);
+}
