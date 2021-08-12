@@ -19,6 +19,10 @@
         <div class="pentesters-pentesters">
             <a href="#" class="link-pentesters">Pentesters</a>
         </div >
+
+        <div class="adicionar">
+            <a href="adicionar-programa.php" class="adicionar-programa">Adicionar programa</a>
+        </div >
     </div>
 
     <div class="container-programas">
@@ -29,6 +33,7 @@
         <div class="descricao-programas">
             <p>Encontre o melhor programa para hackear e receber recompensa</p>
         </div>
+
     </div>
 
 <!-- INICIO TABELA BOO !-->
