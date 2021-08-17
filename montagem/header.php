@@ -38,12 +38,16 @@
                     ?>
                         <a href="perfil/perfil.php" class="botao-entrar" id="teste123"><?php echo $_SESSION['usuario'] ?>
                     <?php
-                    }else{
+                    }elseif (isset($_SESSION['empresa'])){
                     ?>
-                        <a href="loginpage.php" class="botao-entrar" id="teste123">Entrar
+                        <a href="loginpage.php" class="botao-entrar" id="teste123"><?php echo $_SESSION['empresa'] ?>
                     <?php
-                    }
-                   ?> 
+                    }else{
+                    ?> 
+                        <a href="loginpage.php" class="botao-entrar" id="teste123">Entrar
+                    <?php } ?>
+                    
+                   
 
 
                     
