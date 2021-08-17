@@ -8,10 +8,6 @@ if (isset($_SESSION['usuario'])){
     header('Location: index.php'); 
     exit();
 }
-if (isset($_SESSION['empresa'])){
-    header('Location: index.php'); 
-    exit();
-}
 
 
 
@@ -41,7 +37,7 @@ if (isset($_SESSION['apagar'])){
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/estiloLogin.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloLoginEmpresa.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,7 +75,7 @@ if (isset($_SESSION['apagar'])){
         <div class="screen-body-item">
           <div class="app-form">
             <div class="app-form-group">
-              <form action="login.php" method="POST">
+              <form action="acao/loginEmpresa.php" method="POST">
                 
                 <?php
                   if(isset($_SESSION['nao_autenticado'])){
@@ -112,11 +108,11 @@ if (isset($_SESSION['apagar'])){
                   <button class="app-form-button">Entrar</button>
             
               </form>
-              <a href="register.php" class="register">Registrar</a>
+              <a href="registerEmpresa.php" class="register">Registrar</a>
             </div>
           </div>
         </div>
-        <div class="bloco-empresa"><a href="empresaLogin.php" class="entrar-empresa">Empresa</a></div>
+        <div class="bloco-empresa"><a href="loginpage.php" class="entrar-empresa">Profissional</a></div>
       </div>
     </div>
     <div class="credits">

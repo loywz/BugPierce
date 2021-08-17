@@ -1,3 +1,6 @@
+<?php session_start(); 
+include('conexao.php');
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -38,14 +41,15 @@
 
 <!-- INICIO TABELA BOO !-->
 
-
 <?php 
+#Achando o nome para comparar com o Session
 
-include('conexao.php');
+$nome_comparar = $_SESSION['empresa'];
 
-
-$query = "SELECT * FROM programas";
+$query = "SELECT *  FROM programas";
 $result = mysqli_query($conexao, $query);
+
+
 
 ?>
 <div class="seguraa">
@@ -63,14 +67,17 @@ if (($result)){
       $programa = $programas['programa'];
       $reportes = $programas['num_reports'];
       $min = $programas['rec_min'];
-      $max = $programas['rec_max'];  
+      $max = $programas['rec_max'];
+      
 ?>
 
 
     </thead>
     <tbody>
     <tr>
-        <?php echo "<td><a href='programas/$programa' class='programa-na-lista'>$programa</td></a>" ?>
+        <?php if ($nome_comparar == $programa) { ?>
+        <?php echo "<td><a href='programas/$programa' class='programa-na-lista'>$nome_comparar </a> <a href='acao/apagar-programa.php'><img src='img/delete-button.png' class='apagarX'> </a></td>" ?>
+        <?php }else{ echo "<td><a href='programas/$programa' class='programa-na-lista'>$programa</td></a>"; }  ?>
         <td><?php echo $reportes ?></td>
         <td><?php echo $min ?></td>
         <td><?php echo $max ?></td>
